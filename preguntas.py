@@ -1,7 +1,10 @@
-from variables_funciones import *
 import json
+import pygame
+import random
+from variables_funciones import *
 
-class preguntas:
+
+class preguntas_clase:
     def __init__(self, pregunta):
         self.pregunta = pregunta['pregunta']
         self.dificultad = pregunta['dificultad']
@@ -13,118 +16,117 @@ class preguntas:
             return True
         else:
             return False
-
+    
 
 preguntas = [
     {
-        "pregunta": "¿Cuál es la capital de Francia?",
+        'pregunta': '¿Cuál es la capital de Francia?',
         'dificultad':'facil',
-        "respuestas": [
-            "Madrid",
-            "París",
-            "Londres",
-            "Roma"
-        ],
-        "respuesta_correcta": "B"
+        'respuestas': [
+            'A. Madrid',
+            'B. París',
+            'C. Londres',
+            'D. Roma'        ],
+        'respuesta_correcta': 'B'
     },
     {
-        "pregunta": "¿Quién escribió 'Don Quijote de la Mancha'?",
+        'pregunta': '¿Quién escribió "Don Quijote de la Mancha"?',
         'dificultad':'media',
-        "respuestas": [
-            "Garcilaso de la Vega",
-            "Miguel de Cervantes",
-            "Lope de Vega",
-            "Felipe González"
+        'respuestas': [
+            'A. Garcilaso de la Vega',
+            'B. Miguel de Cervantes',
+            'C. Lope de Vega',
+            'D. Felipe González'
         ],
-        "respuesta_correcta": "B"
+        'respuesta_correcta': 'B'
     },
     {
-        "pregunta": "¿En qué año comenzó la Segunda Guerra Mundial?",
+        'pregunta': '¿En qué año comenzó la Segunda Guerra Mundial?',
         'dificultad':'media',
-        "respuestas": [
-            "1914",
-            "1939",
-            "1945",
-            "1923"
+        'respuestas': [
+            'A. 1914',
+            'B. 1939',
+            'C. 1945',
+            'D. 1923'
         ],
-        "respuesta_correcta": "B"
+        'respuesta_correcta': "B"
     },
     {
-        "pregunta": "¿Cuál es el metal más pesado?",
+        'pregunta': '¿Cuál es el metal más pesado?',
         'dificultad':'facil',
-        "respuestas": [
-            "Oro",
-            "Plomo",
-            "Mercurio",
-            "Osmio"
+        'respuestas': [
+            'A. Oro',
+            'B. Plomo',
+            'C. Mercurio',
+            'D. Osmio'
         ],
-        "respuesta_correcta": "D"
+        'respuesta_correcta': 'D'
     },
     {
-        "pregunta": "¿Cuántos planetas hay en el sistema solar?",
+        'pregunta': '¿Cuántos planetas hay en el sistema solar?',
         'dificultad':'media',
-        "respuestas": [
-            "7",
-            "8",
-            "9",
-            "10"
+        'respuestas': [
+            'A. 7',
+            'B. 8',
+            'C. 9',
+            'D. 10'
         ],
-        "respuesta_correcta": "B"
+        'respuesta_correcta': 'B'
     },
     {
-        "pregunta": "¿Cuál es el símbolo químico del oxígeno?",
+        'pregunta': '¿Cuál es el símbolo químico del oxígeno?',
         'dificultad':'facil',
-        "respuestas": [
-            "O",
-            "O2",
-            "Ox",
-            "Oxy"
+        'respuestas': [
+            'A. O',
+            'B. O2',
+            'C. Ox',
+            'D. Oxy'
         ],
-        "respuesta_correcta": "A"
+        'respuesta_correcta': 'A'
     },
     {
-        "pregunta": "¿Qué escritor creó a Sherlock Holmes?",
+        'pregunta': '¿Qué escritor creó a Sherlock Holmes?',
         'dificultad':'media',
-        "respuestas": [
-            "J.R.R. Tolkien",
-            "Agatha Christie",
-            "Arthur Conan Doyle",
-            "Edgar Allan Poe"
+        'respuestas': [
+            'A. J.R.R. Tolkien',
+            'B Agatha Christie',
+            'C. Arthur Conan Doyle',
+            'D. Edgar Allan Poe'
         ],
-        "respuesta_correcta": "C"
+       'respuesta_correcta': 'C'
     },
     {
-        "pregunta": "¿Cuál es la lengua oficial de Brasil?",
+        'pregunta': '¿Cuál es la lengua oficial de Brasil?',
         'dificultad':'facil',
-        "respuestas": [
-            "Español",
-            "Portugués",
-            "Francés",
-            "Inglés"
+        'respuestas': [
+            'A. Español',
+            'B. Portugués',
+            'C. Francés',
+            'D. Inglés'
         ],
-        "respuesta_correcta": "B"
+        'respuesta_correcta': 'B'
     },
     {
-        "pregunta": "¿Qué instrumento musical tiene 88 teclas?",
+        'pregunta': '¿Qué instrumento musical tiene 88 teclas?',
         'dificultad':'facil',
-        "respuestas": [
-            "Guitarra",
-            "Piano",
-            "Violín",
-            "Flauta"
+        'respuestas': [
+            'A. Guitarra',
+            'B. Piano',
+            'C. Violín',
+            'D. Flauta'
         ],
-        "respuesta_correcta": "B"
+        'respuesta_correcta': 'B'
     },
     {
-        "pregunta": "¿Quién pintó la Mona Lisa?",
+        'pregunta': '¿Quién pintó la Mona Lisa?',
         'dificultad':'facil',
-        "respuestas": [
-            "Leonardo da Vinci",
-            "Vincent van Gogh",
-            "Pablo Picasso",
-            "Claude Monet"
+        'respuestas': [
+            'A. Leonardo da Vinci',
+            'B. Vincent van Gogh',
+            'C. Pablo Picasso',
+            'D. Claude Monet'
         ],
-        "respuesta_correcta": "A"
+        'respuesta_correcta': 'A'
     }
 ]
 

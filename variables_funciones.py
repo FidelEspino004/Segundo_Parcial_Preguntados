@@ -1,5 +1,6 @@
 from preguntas import *
 import json
+import random
 
 #CONTADORES---------
 vidas = 3

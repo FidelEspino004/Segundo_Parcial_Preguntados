@@ -1,14 +1,23 @@
-#Usar comillas simples en los comentarios.
-#Usar  
+#Usar comillas simples en los comentarios. ''
 #
 #
+#
+
+SI RESPONDE MAL:
+Resta una vida
+Pasa a la siguiente pregunta
+
+SI RESPONDE BIEN:
+Suma Puntos 
+Pasa a la siguiente pregunta
+
+
 
 # ✅Paso 1, Menu: Jugar, Configurar Juego; Cant d Puntos x Res Correcta, Cant Vidas, Cant de Tiempo entre 
 # Preguntas, TOP, Agregar Preguntas, Estadisticas de Preguntas. 
 
 
 # Paso 2, Preguntas(juego principal): ✅Preguntas(10), ✅Respuestas, Logica de Respuesta, Dificultad de las Preguntas.
-# -Las preguntas estan guardadas dentro de TDA.
 
 # Paso 3, Contadores: Vidas, Puntuacion, Respuestas Correctas, Tiempo.
 

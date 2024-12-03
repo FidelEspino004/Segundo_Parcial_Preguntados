@@ -1,7 +1,9 @@
-from preguntas import *
+import pygame
+import random
+import json
 from variables_funciones import *
 from game_master import *
-import pygame
+from preguntas import *
 
 #-----------------------------------------MOSTAR MENU PRINCIPAL---------------------------------------
 def mostrar_menu_principal():
@@ -29,13 +31,15 @@ def mostrar_menu_configurar():
 def ejecutar():
     while True:
         seleccion = mostrar_menu_principal()
-
+#-------------INICIAR JUEGO
         if seleccion == '1':
             print(f"\nIniciando el juego...")
-#-------------INICIAR JUEGO
-        elif seleccion == '2':
+            
 
 #-------------CONFIGURAR JUEGO
+        elif seleccion == '2':
+
+
             while True:
                 seleccion_config = mostrar_menu_configurar()
                 if seleccion_config == '1':
@@ -52,15 +56,16 @@ def ejecutar():
                 else:
                     print(' ')
                     print(f"Opción inválida. Por favor, elija una de las opciónes.")
+#-------------MOSTRAR TOP                     
         elif seleccion == '3':
             print(f"\nMostrando el TOP de jugadores...")
-#-------------MOSTRAR TOP 
+#-------------AGREGAR PREGUNTAS
         elif seleccion == '4':
             print(f"\nAgregando preguntas...")
-#-------------AGREGAR PREGUNTAS
+#------------ESTADISTICAS DE LAS PREGUNTAS
         elif seleccion == '5':
             print(f"\nMostrando estadísticas de las preguntas...")
-#------------ESTADISTICAS DE LAS PREGUNTAS
+
         elif seleccion == '6':
             print(f"\nSaliendo del juego...")
             break
@@ -71,12 +76,11 @@ def ejecutar():
 print(ejecutar())
 
 pygame.init
-
-juego = game_master()
-
-while juego.corriendo:
+"""
+while Juego.corriendo():
     
 
     pygame.display.flip()
     pygame.time.Clock().tick(60)
 pygame.quit
+"""
