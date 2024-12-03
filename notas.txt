@@ -1,0 +1,20 @@
+#Usar comillas simples en los comentarios.
+#Usar  
+#
+#
+
+# ✅Paso 1, Menu: Jugar, Configurar Juego; Cant d Puntos x Res Correcta, Cant Vidas, Cant de Tiempo entre 
+# Preguntas, TOP, Agregar Preguntas, Estadisticas de Preguntas. 
+
+
+# Paso 2, Preguntas(juego principal): ✅Preguntas(10), ✅Respuestas, Logica de Respuesta, Dificultad de las Preguntas.
+# -Las preguntas estan guardadas dentro de TDA.
+
+# Paso 3, Contadores: Vidas, Puntuacion, Respuestas Correctas, Tiempo.
+
+# Paso 4, Datos-Acumuladores: Jugador(opcional); Posicion, Nombre, Respuestas Correctas, Puntuacion,
+# Tiempo, Estadisticas de Preguntas; porcentaje de aciertos, cantidad de fallos, cantidad 
+# de aciertos y la cantidad de veces que fue preguntada. 
+
+# Paso 5, Configuracion: Cant d Puntos x Res Correcta, Cant Vidas, Cant de Tiempo entre 
+# Preguntas, Agregar Preguntas.
